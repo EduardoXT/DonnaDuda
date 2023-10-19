@@ -20,7 +20,7 @@ h3 {
     font-size: 16px;
 }
 
-h1, h2, h3, .price {
+h1, h2, h3, a, .price {
     color: #2d2c2a;
     text-transform: uppercase;
 }
@@ -32,7 +32,7 @@ header {
 
 header h1 {
     margin-bottom: 4px;
-    font-size: 28px;
+    font-size: 48px;
     line-height: 33px;
 }
 
@@ -82,3 +82,39 @@ li .details {
     font-size: 14px;
     line-height: 21px;
 }
+
+img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 5%;
+}
+
+a {
+    background-color: #e9b7c2;
+    padding: 8px 16px;
+    font-size: 24px;
+    text-decoration: none;
+
+}
+
+footer {
+    display: flex;
+    margin-top: 50px;
+}
+
+.blink {
+    animation: blink 1s steps(1, end) infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: .0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
